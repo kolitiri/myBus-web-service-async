@@ -44,7 +44,7 @@ Currently there are only two requests that are supported:
 
 * **Sample Call:**
 ```
-curl --header "Content-Type: application/json" --request POST --data @stops.json https://www.gmmybus.co.uk/stops
+curl --header "Content-Type: application/json" --request POST --data @stops.json https://gmmybus-async.herokuapp.com/stops
 ```
 
 ## Bus predictions request
@@ -65,8 +65,10 @@ curl --header "Content-Type: application/json" --request POST --data @stops.json
 
 * **Sample Call:**
 ```
-curl --header "Content-Type: application/json" --request POST --data @predictions.json https://www.gmmybus.co.uk/predictions
+curl --header "Content-Type: application/json" --request POST --data @predictions.json https://gmmybus-async.herokuapp.com/predictions
 ```
+
+Alternatively, just load the **gmmybus.postman_collection.json**.
 
 ### Acknowledgements
 

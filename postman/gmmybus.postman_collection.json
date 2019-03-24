@@ -20,7 +20,7 @@
 					"raw": "{\n\t\"location\": {\n\t\t\"latitude\": \"51.492628\",\n\t\t\"longtitude\": \"-0.223060\",\n\t\t\"radius\": \"200\",\n\t\t\"stopTypes\": \"NaptanPublicBusCoachTram\",\n\t\t\"returnLines\": \"False\"\n\t}\n}"
 				},
 				"url": {
-					"raw": "http://www.gmmybus.co.uk/stops",
+					"raw": "https://gmmybus-async.herokuapp.com/stops",
 					"protocol": "http",
 					"host": [
 						"www",
@@ -50,7 +50,7 @@
 					"raw": "{\n\t\"stop\": {\n\t\t\"naptanId\": \"490004290L\"\n\t}\n}"
 				},
 				"url": {
-					"raw": "http://www.gmmybus.co.uk//predictions",
+					"raw": "https://gmmybus-async.herokuapp.com/predictions",
 					"protocol": "http",
 					"host": [
 						"www",
