@@ -1,0 +1,1 @@
+web: gunicorn --pythonpath gmmybus service:factory --worker-class aiohttp.GunicornWebWorker

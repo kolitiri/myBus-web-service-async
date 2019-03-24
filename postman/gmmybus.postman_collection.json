@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "951ca179-b1ea-4f7b-a47a-db2108cb6c39",
+		"name": "gmmybus API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "tfl-stops",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"location\": {\n\t\t\"latitude\": \"51.492628\",\n\t\t\"longtitude\": \"-0.223060\",\n\t\t\"radius\": \"200\",\n\t\t\"stopTypes\": \"NaptanPublicBusCoachTram\",\n\t\t\"returnLines\": \"False\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "http://www.gmmybus.co.uk/stops",
+					"protocol": "http",
+					"host": [
+						"www",
+						"gmmybus",
+						"co",
+						"uk"
+					],
+					"path": [
+						"stops"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tfl-predictions",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"stop\": {\n\t\t\"naptanId\": \"490004290L\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "http://www.gmmybus.co.uk//predictions",
+					"protocol": "http",
+					"host": [
+						"www",
+						"gmmybus",
+						"co",
+						"uk"
+					],
+					"path": [
+						"",
+						"predictions"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
